@@ -5,3 +5,12 @@ var typed= new Typed(".multiple-text",{
     backDelay: 1000,
     loop:true
 });
+AOS.init();
+
+const menuToggle = document.getElementById('menu-toggle');
+const overlay = document.getElementById('overlay');
+
+menuToggle.addEventListener('click', () => {
+  overlay.classList.toggle('active');
+});
+
